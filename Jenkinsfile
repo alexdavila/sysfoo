@@ -24,6 +24,7 @@ pipeline {
       steps {
         echo 'running unit tests...'
         sh 'mvn clean test'
+        sh 'checkout scm'
       }
     }
 
